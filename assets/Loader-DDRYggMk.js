@@ -1,0 +1,1 @@
+import{j as s}from"./index-gs5RYShG.js";const e=()=>s.jsx("div",{className:"preloder",children:s.jsxs("div",{className:"loader",children:[s.jsx("div",{}),s.jsx("div",{}),s.jsx("div",{})]})});export{e as L};
