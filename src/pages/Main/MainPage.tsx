@@ -1,7 +1,9 @@
+import { useMatch } from "react-router-dom";
 import { TopFilms } from "../../ui/TopMovies/TopMovies"
 import MoviePage from "../Movie/MoviePage";
 
 const MainPage = () => {
+  const match = useMatch('/');
 
   return (
     <div
@@ -11,7 +13,7 @@ const MainPage = () => {
       }}
       >
       <MoviePage />
-      {location.pathname === '/' && <TopFilms />}
+      {match && <TopFilms />}
     </div>
   )
 }

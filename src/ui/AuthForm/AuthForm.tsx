@@ -5,6 +5,7 @@ import { fetchRegisterUser, fetchLoginUser, fetchProfile } from '../../api/authU
 import { toggleShowAuthForm } from './authFormSlice';
 import { toggleShowRegistrationCompleted } from '../RegistrationCompleted/registrationCompletedSlice';
 import { toggleShowRegistrationButton } from './registrationButtonSlice';
+import logoBlack from '../../assets/icons/маруся_black_logo.svg'
 
 export const AuthForm = () => {
   const dispatch = useAppDispatch();
@@ -81,7 +82,7 @@ export const AuthForm = () => {
           onSubmit={e => onSubmit(e)}
           className='auth-form'
           >
-          <img className='auth-logo' src="src/assets/icons/маруся_black_logo.svg" alt="logo" />
+          <img className='auth-logo' src={logoBlack} alt="logo" />
           {isRegistering && (<p className='auth-title'>Регистрация</p>)}
           <div className='auth-input-wrapper'>
             <input

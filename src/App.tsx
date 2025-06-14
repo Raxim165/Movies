@@ -12,7 +12,7 @@ const LazyProfile = lazy(() => import('./pages/Profile/ProfilePage'));
 function App() {
   return (
     <div className="container">
-      <BrowserRouter>
+      <BrowserRouter basename='Movies'>
         <Header />
         <main style={{minHeight: 'calc(100vh - 206px)'}}>
           <Routes>

@@ -24,8 +24,8 @@ const GenresMoviesPage = () => {
               .map(genre => (
                 <li className="genre" key={genre}>
                   <Link to={`/genres/${genre}`}>
-                    {/* <img src={`src/assets/img/${genre}.webp`} loading="lazy" alt={genre} /> */}
-                    <img src={`/img/${genre}.webp`} loading="lazy" alt={genre} />
+                    {/* <img src={`public/img/${genre}.webp`} loading="lazy" alt={genre} /> */}
+                    <img src={`/Movies/img/${genre}.webp`} loading="lazy" alt={genre} />
                     <p>{genre}</p>
                   </Link>
                 </li>
